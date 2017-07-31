@@ -1,0 +1,280 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*PARTICLES.JS*/
+#particles-js 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*said min-height before*/
+    z-index: -20;
+    /*background-image: url("../img/bg.jpg");*/
+    color: red;
+    background:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*margin-top: -5%;*/
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+    /*background-attachment: fixed;*/
+    /* For IE8 and earlier */
+}
+#landpage
+{
+    width: 100%;
+    height: 100%;
+}
+/*NAVBAR */
+.navbar {
+   background-color: black;
+   background: black;
+   border-color: black;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  font-size: x-large;
+}
+
+/*PROFILE PHOTO*/
+.me 
+{
+    box-shadow: none;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 15%;
+    width: 240px;
+    height: 240px;
+}
+/*HELLO WORLD TEXT*/
+.helloworld
+{
+	display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 80px;
+    color: #fff;
+}
+/*NAME TYPEWRITER EFFECT START*/
+.name
+{
+	text-align: center;
+}
+.typewriter h1 
+{
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .5s step-end infinite;
+}
+
+.typewriter
+{
+    display: inline-flex;
+}
+/* The typing effect */
+@keyframes typing 
+{
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret 
+{
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+/*TYPEWRITER EFFECT END*/
+/*ABOUT ME*/
+.aboutme
+{
+	padding-top: 5%;
+	font-size: large;
+	font-family: 'Bellefair', serif;
+}
+.education,.workexpericence
+{
+	font-size: large;
+	font-family: 'Bellefair', serif;
+}
+#about h2
+{
+	padding: 0%;
+	margin: 0%;
+}
+
+/*PROJECTS*/
+#projects h1
+{
+  padding-top: 60px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Bellefair', serif;
+}
+.flip3D{ width:425px; height:230px; margin:10px; float:left;}
+.flip3D > .front{
+  position:absolute;
+  -webkit-transform: perspective( 600px ) rotateY( 0deg );
+  transform: perspective( 600px ) rotateY( 0deg );
+  background:black; width:425px; height:230px; border-radius: 7px;
+  color:white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+  position:absolute;
+  -webkit-transform: perspective( 600px ) rotateY( 180deg );
+  transform: perspective( 600px ) rotateY( 180deg );
+  background: #80BFFF; width:425px; height:230px; border-radius: 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+  -webkit-transform: perspective( 600px ) rotateY( -180deg );
+  transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+  -webkit-transform: perspective( 600px ) rotateY( 0deg );
+  transform: perspective( 600px ) rotateY( 0deg );
+}
+.back
+{
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 10%;
+  font-size:large;
+  font-family: 'Bellefair', serif;
+}
+.btn
+{
+  margin: 10px;
+}
+/*END PROJECTS*/
+
+/*RESUME*/
+#resume h1
+{
+  padding-top: 60px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Bellefair', serif;
+}
+/*END RESUME*/
+/*Contact*/
+#contact h1
+{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Bellefair', serif;
+  margin-bottom:0;
+  padding-top:40px;
+}
+.links
+{
+  font-size: 48px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+}
+/*SCROLL UP*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/*FOOTER*/
+footer {
+    height:30%;
+    text-align: center;
+    background-color: black;
+}
+footer > p {
+    padding: 0 15px;
+    font-weight: 100;
+    color: white;
+    font-size: medium;
+}
+footer > p:last-child {
+    padding-bottom: 5px;
+}
+footer ul {
+    padding: 25px 0 0 0;
+}
+footer ul li {
+    padding: 0 10px;
+    display: inline-block;
+    font-weight: 300;
+    margin: 0 auto !important;
+}
+footer ul li a
+{
+  color: white;
+  font-size: medium;
+  text-decoration: underline;
+}
+.fa-heart {
+    color: tomato;
+}
