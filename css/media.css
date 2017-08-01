@@ -13,7 +13,7 @@
   .helloworld
   {
     font-size: x-small;
-    color: red;
+    color: white;
   }
   .name h1
   {
@@ -67,12 +67,12 @@
     text-align: justify;
     text-justify: inter-word;
     padding: 10%;
-    font-size:large;
+    font-size: medium;
     font-family: 'Bellefair', serif;
   }
   .btn
   {
-    margin: 10px;
+    margin: 5px;
   }
   .col-md-6
   {
