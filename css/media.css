@@ -101,10 +101,6 @@
     nav
     {
         display: none;
-    }
-  .row
-  { 
-      margin: auto;
   }
   .flip3D{ width:250px; height:400px; margin:10px; float:left;}
   .flip3D > .front{
