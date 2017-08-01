@@ -1,4 +1,4 @@
-@media only screen and (max-device-width:320px)
+@media only screen and (max-device-width:359px)
 {
   html,body
     {
@@ -27,7 +27,7 @@
   {
     margin: auto;
   }
-  .flip3D{ width:250px; height:400px; margin:10px; float:left;}
+  .flip3D{ width:230px; height:400px; margin:10px; float:left;}
   .flip3D > .front
   {
     position:absolute;
