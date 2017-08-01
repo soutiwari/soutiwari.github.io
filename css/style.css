@@ -246,10 +246,16 @@ body {
     top: 5px;
 }
 /*FOOTER*/
+#repo
+{
+  color: white;
+  text-decoration: underline;
+}
 footer {
     height:30%;
     text-align: center;
     background-color: black;
+    padding : 0;
 }
 footer > p {
     padding: 0 15px;
@@ -277,9 +283,4 @@ footer ul li a
 }
 .fa-heart {
     color: tomato;
-}
-#repo
-{
-  color: white;
-  text-decoration: underline;
 }
