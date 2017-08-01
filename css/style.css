@@ -278,3 +278,8 @@ footer ul li a
 .fa-heart {
     color: tomato;
 }
+#repo
+{
+  color: white;
+  text-decoration: underline;
+}
