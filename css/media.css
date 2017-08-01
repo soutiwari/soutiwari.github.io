@@ -13,7 +13,7 @@
   .helloworld
   {
     font-size: x-small;
-    color: blue;
+    color: red;
   }
   .name h1
   {
@@ -27,13 +27,13 @@
   {
     margin: auto;
   }
-  .flip3D{ width:230px; height:400px; margin:10px; float:left;}
+  .flip3D{ width:200px; height:400px; margin:10px; float:left;}
   .flip3D > .front
   {
     position:absolute;
     -webkit-transform: perspective( 600px ) rotateY( 0deg );
     transform: perspective( 600px ) rotateY( 0deg );
-    background:black; width:250px; height:400px; border-radius: 7px;
+    background:black; width:200px; height:400px; border-radius: 7px;
     color:white;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -45,7 +45,7 @@
     position:absolute;
    -webkit-transform: perspective( 600px ) rotateY( 180deg );
     transform: perspective( 600px ) rotateY( 180deg );
-    background: #80BFFF; width:250px; height:400px; border-radius: 7px;
+    background: #80BFFF; width:200px; height:400px; border-radius: 7px;
    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: -webkit-transform .5s linear 0s;
